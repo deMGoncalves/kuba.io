@@ -1,5 +1,5 @@
 function h (elementName: ElementName, attributes: Attributes, ...children: Children): string {
-  const selfClose: boolean = Boolean(children.length)
+  const selfClose: boolean = (children.length == 0)
 
   const props: string = Object
     .entries(attributes)
@@ -7,8 +7,8 @@ function h (elementName: ElementName, attributes: Attributes, ...children: Child
     .join(' ')
 
   const tag: string = selfClose
-    ? `<${elementName} ${props}>${children}</${elementName}>`
-    : `<${elementName} ${props}/>`
+    ? `<${elementName} ${props}/>`
+    : `<${elementName} ${props}>${children}</${elementName}>`
 
   return tag
 }
