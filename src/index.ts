@@ -1,7 +1,12 @@
+/// <reference path="jsx.d.ts" />
+/// <reference path="h.d.ts" />
+
+import home from './home'
+
 type Env = {}
 
 export default {
 	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-		return new Response("Hello World!")
+		return new Response(home(), { headers: { 'Content-type': 'text/html' } })
 	}
 }
