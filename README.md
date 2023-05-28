@@ -12,9 +12,9 @@ A versão 2 do Kuba representa um salto significativo em termos de desempenho, s
 
 Principais recursos da Versão 2 do Kuba:
 
-Server-Side Rendering (Renderização no lado do servidor)
-Desenvolvido inteiramente em TypeScript
-Hospedado na plataforma Cloudflare Worker
-Escalabilidade automática e baixa latência
-Cache distribuído e segurança avançada
-Agradecemos seu interesse pelo Kuba e estamos ansiosos para receber suas contribuições e feedbacks. Junte-se a nós nesta jornada de desenvolvimento de aplicações web modernas e eficientes com a versão 2 do Kuba.
+- Server-Side Rendering (Renderização no lado do servidor)
+- Desenvolvido inteiramente em TypeScript
+- Hospedado na plataforma Cloudflare Worker
+- Escalabilidade automática e baixa latência
+- Cache distribuído e segurança avançada
+- Agradecemos seu interesse pelo Kuba e estamos ansiosos para receber suas contribuições e feedbacks. Junte-se a nós nesta jornada de desenvolvimento de aplicações web modernas e eficientes com a versão 2 do Kuba.
