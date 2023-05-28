@@ -17,4 +17,5 @@ Principais recursos da Versão 2 do Kuba:
 - Hospedado na plataforma Cloudflare Worker
 - Escalabilidade automática e baixa latência
 - Cache distribuído e segurança avançada
-- Agradecemos seu interesse pelo Kuba e estamos ansiosos para receber suas contribuições e feedbacks. Junte-se a nós nesta jornada de desenvolvimento de aplicações web modernas e eficientes com a versão 2 do Kuba.
+
+Agradecemos seu interesse pelo Kuba e estamos ansiosos para receber suas contribuições e feedbacks. Junte-se a nós nesta jornada de desenvolvimento de aplicações web modernas e eficientes com a versão 2 do Kuba.
