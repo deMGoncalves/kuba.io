@@ -1,16 +1,10 @@
-function h (elementName: ElementName, attributes: Attributes, ...children: Children): string {
-  const selfClose: boolean = (children.length == 0)
+import Componet from './component'
+import Element from './element'
 
-  const props: string = Object
-    .entries(attributes)
-    .map(([key, value]) => `${key}="${value}"`)
-    .join(' ')
-
-  const tag: string = selfClose
-    ? `<${elementName} ${props}/>`
-    : `<${elementName} ${props}>${children}</${elementName}>`
-
-  return tag
+function h (target: Tag, attrs: Attrs, ...children: Child[]): string {
+  if (Element.is(target)) return Element.create(target as string, attrs, children)
+  if (Componet.is(target)) return Componet.execute(target as Function, attrs, children)
+  return ''
 }
 
 export default h

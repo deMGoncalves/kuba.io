@@ -1,5 +1,5 @@
-/// <reference path="jsx.d.ts" />
 /// <reference path="h.d.ts" />
+/// <reference path="jsx.d.ts" />
 
 import home from './home'
 

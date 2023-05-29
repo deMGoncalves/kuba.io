@@ -1,9 +1,9 @@
-declare type ElementName = string
+declare type Tag = string | Function
 
-declare type Attributes= {
-  [key: string]: string | number
+declare type Attrs = {
+  [key: string]: any
 }
 
-declare type Children = string[]
+declare type Child = string | number
 
-declare function h(elementName: ElementName, attributes: Attributes, ...children: Children): string
+declare function h(target: Tag, attrs: Attrs, ...children: Child[]): string

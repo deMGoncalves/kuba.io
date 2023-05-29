@@ -1,10 +1,14 @@
 import h from './h'
 
+const Header = () =>(
+  <header>kuba.io</header>
+)
+
 function home () {
   return (
-    <div style='padding: 10px; background: red;'>
-      <span style='color: white'>@D</span>
-    </div>
+    <main>
+      <Header />
+    </main>
   )
 }
 
