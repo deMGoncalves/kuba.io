@@ -1,6 +1,6 @@
 class Componet {
-  static execute (component, attributes, children) {
-    return component(attributes, children)
+  static execute (component, attrs, children) {
+    return component({ ...attrs }, children.flat(Infinity))
   }
 
   static is (component) {
