@@ -1,4 +1,4 @@
-import h from './h'
+import jsx from './jsx'
 
 const Header = () =>(
   <header>kuba.io</header>

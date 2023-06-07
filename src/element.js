@@ -1,11 +1,11 @@
 class Tag {
-  static isSelfClose (children: Child[]): boolean {
+  static isSelfClose (children) {
     return (children?.length == 0)
   }
 }
 
 class Props {
-  static stringfy (attrs: Attrs): string {
+  static stringfy (attrs) {
     return Object
       .entries({ ...attrs })
       .map(([key, value]) => `${key}='${value}'`)
@@ -14,17 +14,17 @@ class Props {
 }
 
 class Element {
-  static create (elementName: string, attrs: Attrs, children: Child[]): string {
-    const selfClose: boolean = Tag.isSelfClose(children)
-    const props: string = Props.stringfy(attrs)
+  static create (elementName, attrs, children) {
+    const selfClose = Tag.isSelfClose(children)
+    const props = Props.stringfy(attrs)
 
     return selfClose
       ? `<${elementName} ${props}/>`
       : `<${elementName} ${props}>${children}</${elementName}>`
   }
 
-  static is (target: any): boolean {
-    return (typeof target === 'string')
+  static is (element) {
+    return (typeof element === 'string')
   }
 }
 

@@ -1,7 +1,6 @@
 {
   "name": "kuba.io",
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20230518.0",
     "typescript": "^5.0.4",
     "wrangler": "2.16.0"
   },
