@@ -1,4 +1,4 @@
 compatibility_date = "2023-05-27"
-main = "src/index.js"
+main = "src/index.jsx"
 name = "kuba-io"
 send_metrics = false

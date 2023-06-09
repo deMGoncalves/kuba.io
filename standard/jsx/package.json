@@ -1,0 +1,6 @@
+{
+  "main": "src/index.js",
+  "name": "@kuba/jsx",
+  "private": true,
+  "version": "0.0.0"
+}

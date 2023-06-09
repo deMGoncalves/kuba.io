@@ -1,14 +1,10 @@
-import jsx from './jsx'
-
-const Header = () =>(
-  <header>kuba.io</header>
-)
+import jsx from '@kuba/jsx'
 
 function home () {
   return (
-    <main>
-      <Header />
-    </main>
+    <header>
+      <h1>Hello Kuba.io</h1>
+    </header>
   )
 }
 

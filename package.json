@@ -1,13 +1,19 @@
 {
-  "name": "kuba.io",
+  "name": "kuba",
   "devDependencies": {
     "typescript": "^5.0.4",
     "wrangler": "2.16.0"
   },
+  "packageManager": "yarn@3.6.0",
   "private": true,
   "scripts": {
     "start": "wrangler dev",
     "deploy": "wrangler publish"
   },
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "workspaces": {
+    "packages": [
+      "standard/*"
+    ]
+  }
 }
