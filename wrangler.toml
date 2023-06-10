@@ -1,4 +1,7 @@
 compatibility_date = "2023-05-27"
-main = "src/index.jsx"
+main = "dist/index.js"
 name = "kuba-io"
 send_metrics = false
+
+[buid]
+command = "tsc"

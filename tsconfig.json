@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "jsx": "react",
     "jsxFactory": "jsx",
     "jsxFragmentFactory": "Fragment",
     "moduleResolution": "node",
-    "module": "es2022",
+    "module": "esnext",
+    "outDir": "dist",
     "resolveJsonModule": true,
     "sourceMap": false,
     "strict": true,
-    "target": "es2021"
-  }
+    "target": "esnext"
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
