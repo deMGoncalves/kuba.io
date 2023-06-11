@@ -4,4 +4,6 @@ name = "kuba-io"
 send_metrics = false
 
 [buid]
-command = "tsc"
+command = "yarn run tsc"
+cwd = "."
+watch_dir = "."
