@@ -1,8 +1,9 @@
 import middleware from '@kuba/middleware'
+import result from '@kuba/result'
 
-async function storage (home, next) {
+async function storage (address, next) {
   const data = await fetch('https://viacep.com.br/ws/01001000/json').then(r => r.json())
-  home.changeTitle(data.logradouro)
+  address[result.Ok]?.(data)
   next()
 }
 

@@ -1,8 +1,8 @@
 import jsx from '@kuba/jsx'
-import Home from './home'
+import Address from './address'
 
 export default {
 	async fetch(request, env, ctx) {
-		return new Response(await <Home />, { headers: { 'Content-type': 'text/html' } })
+		return new Response(await <Address />, { headers: { 'Content-type': 'text/html' } })
 	}
 }

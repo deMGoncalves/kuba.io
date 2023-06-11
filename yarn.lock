@@ -215,6 +215,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/result@workspace:standard/result":
+  version: 0.0.0-use.local
+  resolution: "@kuba/result@workspace:standard/result"
+  languageName: unknown
+  linkType: soft
+
 "@miniflare/cache@npm:2.13.0":
   version: 2.13.0
   resolution: "@miniflare/cache@npm:2.13.0"
