@@ -1,5 +1,3 @@
-import magic from './magic'
-
 function paint (component) {
   return function (Klass) {
     return new Proxy(
@@ -27,7 +25,7 @@ function paint (component) {
 }
 
 Object.assign(paint, {
-  textContent: magic.paint_textContent
+  textContent: Symbol('textContent')
 })
 
 export default paint
