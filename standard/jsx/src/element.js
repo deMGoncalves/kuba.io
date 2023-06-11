@@ -1,4 +1,4 @@
-import Instance from './instance'
+import Children from './children'
 import Props from './props'
 import Tag from './tag'
 
@@ -6,15 +6,11 @@ class Element {
   static create (element, attrs, children) {
     const selfClose = Tag.isSelfClose(children)
     const props = Props.stringfy(attrs)
-
-    children = children.flat(Infinity)
-    children = children.filter(Boolean)
-    children = Instance.mapper(children)
-    children = children.join(' ')
+    const textContent = Children.stringfy(children)
 
     return selfClose
       ? `<${element} ${props}/>`
-      : `<${element} ${props}>${children}</${element}>`
+      : `<${element} ${props}>${textContent}</${element}>`
   }
 
   static is (element) {
