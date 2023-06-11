@@ -8,15 +8,15 @@ function paint (component) {
           ? new Klass(...arguments)
           : new Klass(attrs)
 
-        const domParsed = component(instance, children)
+        const textContent = component(instance, children)
 
         Object.assign(instance, {
-          [paint.domParsed]: () => domParsed
+          [paint.textContent]: () => textContent
         })
 
         return (this instanceof Klass)
           ? instance
-          : domParsed
+          : textContent
       },
       {
         get: (_, key) => Reflect.get(Klass, key),
@@ -27,7 +27,7 @@ function paint (component) {
 }
 
 Object.assign(paint, {
-  domParsed: magic.paint_domParsed
+  textContent: magic.paint_textContent
 })
 
 export default paint
