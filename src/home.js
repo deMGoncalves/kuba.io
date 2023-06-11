@@ -1,10 +1,19 @@
 import { paint } from '@kuba/jsx'
 import component from './component'
+import storage from './storage'
 
 @paint(component)
+@storage
 class Home {
+  #title
+
   get title () {
-    return 'Hello kuba'
+    return (this.#title ??= ':(')
+  }
+
+  changeTitle (value) {
+    this.#title = value
+    return this
   }
 }
 

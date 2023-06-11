@@ -209,6 +209,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/middleware@workspace:standard/middleware":
+  version: 0.0.0-use.local
+  resolution: "@kuba/middleware@workspace:standard/middleware"
+  languageName: unknown
+  linkType: soft
+
 "@miniflare/cache@npm:2.13.0":
   version: 2.13.0
   resolution: "@miniflare/cache@npm:2.13.0"

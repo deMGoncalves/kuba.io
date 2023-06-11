@@ -1,10 +1,10 @@
 function paint (component) {
-  return function (Klass) {
+  return function (ClassRef) {
     return new Proxy(
-      function (attrs, children) {
-        const instance = (this instanceof Klass)
-          ? new Klass(...arguments)
-          : new Klass(attrs)
+      async function (attrs, children) {
+        const instance = (this instanceof ClassRef)
+          ? await new ClassRef(...arguments)
+          : await new ClassRef(attrs)
 
         const textContent = component(instance, children)
 
@@ -12,13 +12,13 @@ function paint (component) {
           [paint.textContent]: () => textContent
         })
 
-        return (this instanceof Klass)
+        return (this instanceof ClassRef)
           ? instance
           : textContent
       },
       {
-        get: (_, key) => Reflect.get(Klass, key),
-        set: (_, key, value) => (Reflect.set(Klass, key, value), true)
+        get: (_, key) => Reflect.get(ClassRef, key),
+        set: (_, key, value) => (Reflect.set(ClassRef, key, value), true)
       }
     )
   }
