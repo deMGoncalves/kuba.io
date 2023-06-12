@@ -7,3 +7,11 @@ send_metrics = false
 command = "yarn run tsc"
 cwd = "."
 watch_dir = "."
+
+[site]
+bucket = "public"
+
+[dev]
+ip = "localhost"
+port = 5000
+local_protocol = "http"
