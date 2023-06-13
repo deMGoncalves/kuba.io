@@ -9,16 +9,7 @@ function component (address) {
       </head>
       <body>
         <address>
-          <p>cep: {address.cep}</p>
-          <p>logradouro: {address.logradouro}</p>
-          <p>complemento: {address.complemento}</p>
-          <p>bairro: {address.bairro}</p>
-          <p>localidade: {address.localidade}</p>
-          <p>uf: {address.uf}</p>
-          <p>ibge: {address.ibge}</p>
-          <p>gia: {address.gia}</p>
-          <p>ddd: {address.ddd}</p>
-          <p>siafi: {address.siafi}</p>
+          <p>{address.value}</p>
         </address>
       </body>
     </>
