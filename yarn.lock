@@ -203,6 +203,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kuba/http@workspace:standard/http":
+  version: 0.0.0-use.local
+  resolution: "@kuba/http@workspace:standard/http"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/jsx@workspace:standard/jsx":
   version: 0.0.0-use.local
   resolution: "@kuba/jsx@workspace:standard/jsx"
