@@ -12,10 +12,6 @@ class Element {
       ? `<${element} ${props}/>`
       : `<${element} ${props}>${textContent}</${element}>`
   }
-
-  static is (element) {
-    return (typeof element === 'string')
-  }
 }
 
 export default Element

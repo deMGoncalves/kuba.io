@@ -1,4 +1,4 @@
-import to from './to'
+import outlet from './outlet'
 
 export default new Proxy({}, {
   get (_, method) {
@@ -9,7 +9,7 @@ export default new Proxy({}, {
 
       return {
         blob () {
-          return to(
+          return outlet(
             fetch(url, init).then(response => response.blob())
           )
         },
@@ -34,7 +34,7 @@ export default new Proxy({}, {
         },
 
         json () {
-          return to(
+          return outlet(
             fetch(url, init).then(response => response.json())
           )
         },
@@ -50,7 +50,7 @@ export default new Proxy({}, {
         },
 
         text () {
-          return to(
+          return outlet(
             fetch(url, init).then(response => response.text())
           )
         }
