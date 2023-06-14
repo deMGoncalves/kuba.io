@@ -227,6 +227,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/router@workspace:standard/router":
+  version: 0.0.0-use.local
+  resolution: "@kuba/router@workspace:standard/router"
+  languageName: unknown
+  linkType: soft
+
 "@miniflare/cache@npm:2.13.0":
   version: 2.13.0
   resolution: "@miniflare/cache@npm:2.13.0"
