@@ -1,10 +1,10 @@
 import handle from './handle'
-import toSign from './toSign'
+import listeners from './listeners'
 
 const router = new Proxy({}, {
   get (_, method) {
-    if (/delete|get|post|pub/.test(method)) return toSign[method]
     if (/handle/.test(method)) return handle
+    return (path, page) => listeners[method.toUpperCase()].push({ path, page })
   }
 })
 

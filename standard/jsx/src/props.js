@@ -1,7 +1,7 @@
 class Props {
   static stringfy (attrs) {
     return Object
-      .entries({ ...attrs })
+      .entries(attrs)
       .map(([key, value]) => `${key}='${value}'`)
       .join(' ')
   }
