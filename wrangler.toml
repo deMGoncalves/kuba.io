@@ -1,14 +1,14 @@
 compatibility_date = "2023-05-27"
-main = "./dist/index.js"
+main = "dist/index.js"
 name = "kuba-io"
 send_metrics = false
 
 [build]
 command = "yarn run tsc"
-watch_dir = "./src"
+watch_dir = "src"
 
 [site]
-bucket = "./public"
+bucket = "dist"
 
 [dev]
 ip = "localhost"
