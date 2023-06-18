@@ -3,22 +3,22 @@ import Componet from './component'
 import Element from './element'
 
 /**
- * Renderiza um elemento JSX com base no elemento ou componente fornecido, atributos e filhos.
+ * Renders a JSX element based on the provided element or component, attributes, and children.
  *
- * @param {string | Function} elementOrComponent - Elemento JSX ou componente a ser renderizado.
- * @param {Object} attrs - Atributos para o elemento JSX ou componente.
- * @param {Array<string | Function>} children - Filhos do elemento JSX ou componente. Pode conter strings ou elementos JSX.
- * @returns {string} O elemento JSX renderizado como uma string.
+ * @param {string | Function} elementOrComponent - JSX element or component to be rendered.
+ * @param {Object} attrs - Attributes for the JSX element or component.
+ * @param {Array<string | Function>} children - Children of the JSX element or component. Can contain strings or JSX elements.
+ * @returns {string} The rendered JSX element as a string.
  */
-function jsx (elementOrComponent, attrs, ...children) {
-  // Copia os atributos para evitar modificações indesejadas no objeto original
+function jsx(elementOrComponent, attrs, ...children) {
+  // Copy the attributes to avoid unintended modifications to the original object
   attrs = { ...attrs }
 
-  // Mapeia os filhos para garantir que todos estejam no formato adequado
+  // Map the children to ensure they are in the proper format
   children = Children.mapper(children)
 
-  // Se o elemento for um componente, executa o componente com os atributos e filhos fornecidos
-  // Caso contrário, cria um novo elemento JSX com os atributos e filhos fornecidos
+  // If the element is a component, execute the component with the provided attributes and children
+  // Otherwise, create a new JSX element with the provided attributes and children
   return Componet.is(elementOrComponent)
     ? Componet.execute(elementOrComponent, attrs, children)
     : Element.create(elementOrComponent, attrs, children)
