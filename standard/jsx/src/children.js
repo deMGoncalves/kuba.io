@@ -7,6 +7,7 @@ class Children {
   /**
    * Maps and filters the JSX children to ensure they are in the proper format.
    *
+   * @static
    * @param {Array} children - The JSX children to be mapped and filtered.
    * @returns {Array} The mapped and filtered JSX children.
    */
@@ -20,6 +21,7 @@ class Children {
   /**
    * Converts the JSX children into a string.
    *
+   * @static
    * @param {Array} children - The JSX children to be converted into a string.
    * @returns {string} The string representation of the JSX children.
    */
