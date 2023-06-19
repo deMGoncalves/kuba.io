@@ -2,8 +2,20 @@ import Children from './children'
 import Props from './props'
 import Tag from './tag'
 
+/**
+ * Utility class for creating JSX elements.
+ */
 class Element {
-  static create (element, attrs, children) {
+  /**
+   * Creates an HTML string representation of the JSX element with the given element type, attributes, and children.
+   *
+   * @static
+   * @param {string} element - The element type.
+   * @param {Object} attrs - The attributes for the element.
+   * @param {Array} children - The children of the element.
+   * @returns {string} The HTML string representation of the JSX element.
+   */
+  static create(element, attrs, children) {
     const selfClose = Tag.isSelfClose(children)
     const props = Props.stringfy(attrs)
     const textContent = Children.stringfy(children)
