@@ -11,14 +11,9 @@ import Element from './element'
  * @returns {string} The rendered JSX element as a string.
  */
 function jsx(elementOrComponent, attrs, ...children) {
-  // Copy the attributes to avoid unintended modifications to the original object
   attrs = { ...attrs }
-
-  // Map the children to ensure they are in the proper format
   children = Children.mapper(children)
 
-  // If the element is a component, execute the component with the provided attributes and children
-  // Otherwise, create a new JSX element with the provided attributes and children
   return Componet.is(elementOrComponent)
     ? Componet.execute(elementOrComponent, attrs, children)
     : Element.create(elementOrComponent, attrs, children)
