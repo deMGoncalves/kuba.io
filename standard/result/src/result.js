@@ -1,7 +1,27 @@
-const Error = Symbol('Error')
-const Ok = Symbol('Ok')
+/**
+ * Enum-like object representing result values.
+ *
+ * The `Result` object provides two symbols, `Error` and `Ok`, that can be used
+ * to represent the outcome of a computation or operation.
+ *
+ * @namespace Result
+ */
+const Result = {
+  /**
+   * Symbol representing an error outcome.
+   *
+   * @memberof Result
+   * @typedef {Symbol} Result.Error
+   */
+  Error: Symbol('Error'),
 
-export default {
-  Error,
-  Ok
+  /**
+   * Symbol representing a successful outcome.
+   *
+   * @memberof Result
+   * @typedef {Symbol} Result.Ok
+   */
+  Ok: Symbol('Ok')
 }
+
+export default Result
