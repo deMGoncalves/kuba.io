@@ -8,7 +8,7 @@ command = "yarn run tsc"
 watch_dir = "src"
 
 [site]
-bucket = "dist"
+bucket = "public"
 
 [dev]
 ip = "localhost"
