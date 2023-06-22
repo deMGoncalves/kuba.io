@@ -1,21 +1,48 @@
-### Versão 2 do Kuba - Server-Side Rendering com Javascript e Cloudflare Worker
+# Kuba
 
-Esta é a segunda versão do Kuba, um aplicativo de renderização no lado do servidor (Server-Side Rendering) desenvolvido utilizando 100% Javascript e hospedado na plataforma Cloudflare Worker.
+Kuba is a project that was created with the purpose of simplifying the way we develop web applications. As developers, we often encounter complex problems that seem to have no simple solution. But is it really necessary to complicate things so much?
 
-O Kuba é um projeto focado em fornecer uma solução eficiente e escalável para a renderização de páginas no servidor, proporcionando uma experiência rápida e fluída para os usuários. Com a utilização do Javascript, garantimos maior segurança e robustez no desenvolvimento, além de facilitar a manutenção e evolução do código.
+The goal of Kuba is to show that it's possible to develop web applications in a simpler way without compromising code quality and efficiency. To achieve this, the project utilizes modern JavaScript concepts, such as the use of decorators to manage component lifecycle.
 
-Nesta nova versão, adotamos a plataforma Cloudflare Worker para hospedar e executar o aplicativo. A Cloudflare Worker é uma solução de edge computing que permite executar código Javascript em pontos de presença distribuídos globalmente, garantindo uma latência reduzida e uma resposta rápida para cada solicitação dos usuários.
+Additionally, Kuba was created with a philosophy that values simplicity and ease of use. We believe that clean and organized code is essential for the maintenance and evolution of a software project.
 
-Ao utilizar o Kuba, você terá acesso a recursos avançados de renderização no servidor, permitindo a criação de páginas dinâmicas e personalizadas. Além disso, a integração com a Cloudflare Worker traz benefícios adicionais, como escalabilidade automática, cache distribuído e segurança de alto nível.
+In summary, Kuba is a JavaScript project that aims to simplify the way we develop web applications, valuing simplicity, efficiency, and collaboration among developers.
 
-A versão 2 do Kuba representa um salto significativo em termos de desempenho, segurança e escalabilidade. Estamos empolgados em compartilhar essa nova versão com a comunidade e esperamos que seja uma ferramenta útil para o desenvolvimento de aplicações web robustas e eficientes.
+### Manifesto
 
-Principais recursos da Versão 2 do Kuba:
+The Kuba manifesto is a declaration of principles that guide the development of the project:
 
-- Server-Side Rendering (Renderização no lado do servidor)
-- Desenvolvido inteiramente em Javascript
-- Hospedado na plataforma Cloudflare Worker
-- Escalabilidade automática e baixa latência
-- Cache distribuído e segurança avançada
+- Simplicity is the key to scalability
+- Small is beautiful
+- Imperfect is human
 
-Agradecemos seu interesse pelo Kuba e estamos ansiosos para receber suas contribuições e feedbacks. Junte-se a nós nesta jornada de desenvolvimento de aplicações web modernas e eficientes com a versão 2 do Kuba.
+### Constructive Units
+
+The constructive units of Kuba are:
+
+- *View*: Responsible for rendering the HTML, CSS, and JavaScript of the application.
+- *Root Aggregate*: Responsible for modeling the application's domain.
+  - *Action*: Responsible for manipulating the state of the root aggregate.
+  - *State*: Responsible for representing the state of the root aggregate.
+- *Advice*: Responsible for managing cross-cutting concerns of the application, such as logging, metrics, security, data updates, and formatting.
+
+### How It Works
+
+Kuba is a web development tool that provides a set of resources and functionalities to facilitate the application creation process. It offers a simple and efficient architecture, allowing developers to focus on implementing business logic without worrying too much about technical details.
+
+### Features
+
+- Lightweight and easy to use
+- Customizable and adaptable for various projects
+- Supports industry-standard technologies
+- Contribution from developers worldwide
+
+### Benefits
+
+Kuba brings several benefits to web application development, including:
+
+- Simple and easy-to-maintain code
+- Scalability and flexibility to accommodate future changes
+- Modularity and code reuse
+- High code quality, following the principles of the Kuba manifesto
+- Ease of testing and debugging
