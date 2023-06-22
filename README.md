@@ -20,11 +20,11 @@ The Kuba manifesto is a declaration of principles that guide the development of 
 
 The constructive units of Kuba are:
 
-- *View*: Responsible for rendering the HTML, CSS, and JavaScript of the application.
-- *Root Aggregate*: Responsible for modeling the application's domain.
+- **View**: Responsible for rendering the HTML, CSS, and JavaScript of the application.
+- **Root Aggregate**: Responsible for modeling the application's domain.
   - *Action*: Responsible for manipulating the state of the root aggregate.
   - *State*: Responsible for representing the state of the root aggregate.
-- *Advice*: Responsible for managing cross-cutting concerns of the application, such as logging, metrics, security, data updates, and formatting.
+- **Advice**: Responsible for managing cross-cutting concerns of the application, such as logging, metrics, security, data updates, and formatting.
 
 ### How It Works
 
