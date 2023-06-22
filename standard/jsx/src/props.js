@@ -10,7 +10,8 @@ class Props {
    * @returns {string} The string representation of the props.
    */
   static stringify(attrs) {
-    return Object.entries(attrs)
+    return Object
+      .entries(attrs)
       .map(([key, value]) => `${key}='${value}'`)
       .join(' ')
   }
