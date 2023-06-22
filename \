@@ -1,6 +1,6 @@
-import extractArgs from './extractArgs'
 import extractParams from './extractParams'
 import findMatchingRoute from './findMatchingRoute'
+import listeners from './listeners'
 
 /**
  * Handle HTTP Request
@@ -15,10 +15,7 @@ import findMatchingRoute from './findMatchingRoute'
  */
 function handle(request, env, ctx) {
   const { page, path } = findMatchingRoute(request)
-
-  extractArgs(request)
   extractParams(request, path)
-
   return page?.(request, env, ctx)
 }
 
