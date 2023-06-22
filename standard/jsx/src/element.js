@@ -17,8 +17,8 @@ class Element {
    */
   static create(element, attrs, children) {
     const selfClose = Tag.isSelfClose(children)
-    const props = Props.stringfy(attrs)
-    const textContent = Children.stringfy(children)
+    const props = Props.stringify(attrs)
+    const textContent = Children.stringify(children)
 
     return selfClose
       ? `<${element} ${props}/>`

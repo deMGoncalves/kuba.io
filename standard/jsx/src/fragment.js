@@ -8,7 +8,7 @@ import Children from './children'
  * @returns {string} The concatenated string representation of the children.
  */
 function Fragment(_attrs, children) {
-  return Children.stringfy(children)
+  return Children.stringify(children)
 }
 
 export default Fragment
