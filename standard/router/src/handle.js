@@ -1,11 +1,16 @@
 import listeners from './listeners'
 
-function handle (request, env, ctx) {
-  const { pathname } = new URL(request.url)
-  const path = pathname.replace(/:\w+/g, '([a-z0-9-_]+)')
+function handle(request, env, ctx) {
+  const route = findMatchingRoute(request)
+  return route?.page(request, env, ctx)
+}
+
+function findMatchingRoute(request) {
+  const url = new URL(request.url)
+  const path = url.pathname.replace(/:\w+/g, '([a-z0-9-_]+)')
   const pattern = new RegExp(`^${path}$`, 'i')
-  const { page } = listeners[request.method].find(({ path }) => pattern.test(path)) ?? {}
-  return page?.(request, env, ctx)
+  return listeners[request.method].find(({ path }) => pattern.test(path))
 }
 
 export default handle
+
