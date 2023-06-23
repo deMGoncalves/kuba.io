@@ -43,3 +43,11 @@ By leveraging the power of island architecture, Kuba simplifies web application 
 Experience better performance as the majority of your site transforms into static HTML. Moreover, the island architecture prioritizes important content and ensures your pages are search engine optimized (SEO).
 
 Please note that while the island architecture brings significant benefits, it may not be suitable for highly interactive applications.
+
+### Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository for this package.
+
+### License
+
+This package is licensed under the [MIT License](https://opensource.org/licenses/MIT).
