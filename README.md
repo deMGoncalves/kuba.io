@@ -44,6 +44,64 @@ Experience better performance as the majority of your site transforms into stati
 
 Please note that while the island architecture brings significant benefits, it may not be suitable for highly interactive applications.
 
+### Installation
+
+To install Kuba, follow these steps:
+
+1. Make sure you have Node.js installed on your system. You can download it from the official website: [Node.js](https://nodejs.org/).
+
+2. Clone the Kuba project repository from GitHub:
+
+```shell
+git clone https://github.com/deMGoncalves/kuba.io.git
+```
+
+3. Navigate to the project directory:
+
+```shell
+cd kuba.io
+```
+
+4. Install the project dependencies using your preferred package manager. In this case, we'll use Yarn:
+
+```shell
+yarn install
+```
+
+### Execution
+
+To run the Kuba project, follow these steps:
+
+1. Start the local development server:
+
+```shell
+yarn start
+```
+
+This command will start the Kuba development server using Wrangler.
+
+2. Access the running application.
+
+Once the server is up and running, you can access the application by visiting the provided local URL, typically http://localhost:5000 or as specified by the development server.
+
+You can now begin developing your web application using Kuba!
+
+### Deployment
+
+To deploy your Kuba project to a live environment, follow these steps:
+
+1. Deploy the project:
+
+```shell
+yarn deploy
+```
+
+This command will publish your project using Wrangler and make it available in the specified deployment environment.
+
+>> Note: Make sure you have configured the deployment settings and environment variables as needed in the Wrangler configuration file.
+
+Congratulations! You have successfully installed and executed the Kuba project. Now you can develop and deploy web applications with ease using Kuba.
+
 ### Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository for this package.
