@@ -10,7 +10,7 @@
     "start": "wrangler dev",
     "deploy": "wrangler publish"
   },
-  "version": "0.0.0",
+  "version": "1.0.0",
   "workspaces": {
     "packages": [
       "standard/*"
