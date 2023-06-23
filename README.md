@@ -1,72 +1,45 @@
-# Kuba
+## Kuba: Simplifying Front-End Development
 
-Kuba is a project that was created with the purpose of simplifying the way we develop web applications. As developers, we often encounter complex problems that seem to have no simple solution. But is it really necessary to complicate things so much?
+Welcome to Kuba, the JavaScript framework that revolutionizes web application development. Are you tired of grappling with complex problems and convoluted code? With Kuba, we believe that simplicity is the key to scalable, beautiful, and efficient front-end development.
 
-The goal of Kuba is to show that it's possible to develop web applications in a simpler way without compromising code quality and efficiency. To achieve this, the project utilizes modern JavaScript concepts, such as the use of decorators to manage component lifecycle.
+### Why Choose Kuba?
 
-Additionally, Kuba was created with a philosophy that values simplicity and ease of use. We believe that clean and organized code is essential for the maintenance and evolution of a software project.
+Kuba was born out of the desire to simplify web application development without sacrificing code quality or efficiency. We leverage modern JavaScript concepts, including the use of decorators to manage component lifecycle, to empower developers with an intuitive and streamlined development experience.
 
-In summary, Kuba is a JavaScript project that aims to simplify the way we develop web applications, valuing simplicity, efficiency, and collaboration among developers.
+Our philosophy centers around simplicity and ease of use. We firmly believe that clean, organized code is the foundation for maintaining and evolving successful software projects. With Kuba, you can build web applications that embody these principles.
 
-### Manifesto
+### The Kuba Manifesto
 
-The Kuba manifesto is a declaration of principles that guide the development of the project:
+At Kuba, we have a manifesto that guides our development process:
 
-- Simplicity is the key to scalability
-- Small is beautiful
-- Imperfect is human
+- **Simplicity is the key to scalability**: By embracing simplicity, we unlock the potential for scalable and maintainable applications.
+- **Small is beautiful**: We embrace the elegance and power of small, focused components that work harmoniously together.
+- **Imperfect is human**: We understand that perfection is unattainable, and we value progress over perfection. We embrace imperfections as opportunities to learn and grow.
 
-### Constructive Units
+### Constructive Units for Well-Structured Applications
 
-The Kuba framework consists of several key components that work together to create a well-structured web application:
+Kuba's framework comprises several key components that work in harmony to create well-structured web applications:
 
-- **View**: The View component is responsible for rendering the HTML, CSS, and JavaScript of the application. It handles the presentation layer and ensures that the user interface is displayed correctly.
-- **Root Aggregate**: The Root Aggregate component is responsible for modeling the application's domain. It defines the core functionality and data structure of the application. Within the Root Aggregate, there are two important parts:
-  - **Action**: The Action component is responsible for manipulating the state of the Root Aggregate. It handles user interactions, triggers events, and performs actions that modify the application's data and behavior.
-  - **State**: The State component represents the current state of the Root Aggregate. It holds the data and information that the application needs to operate. The State is updated by the Action component and is used by the View component to render the appropriate user interface.
-- **Advice**: The Advice component plays a crucial role in managing cross-cutting concerns of the application. It handles tasks such as logging, metrics, security, data updates, and formatting. The Advice component ensures that these concerns are addressed consistently throughout the application and promotes code reusability.
+- **View**: The View component handles the rendering of HTML, CSS, and JavaScript, ensuring the correct display of the user interface. It empowers you to create stunning and responsive front-end experiences.
+- **Root Aggregate**: The Root Aggregate component models the application's domain, defining its core functionality and data structure. It consists of two vital parts:
+  - **Action**: The Action component manipulates the state of the Root Aggregate. It handles user interactions, triggers events, and performs actions that modify the application's data and behavior.
+  - **State**: The State component represents the current state of the Root Aggregate. It holds the data and information necessary for the application to operate. The State is updated by the Action component and utilized by the View component to render the appropriate user interface.
+- **Advice**: The Advice component plays a crucial role in managing cross-cutting concerns, such as logging, metrics, security, data updates, and formatting. By encapsulating these concerns, the Advice component ensures consistency throughout the application and promotes code reusability.
 
-By dividing the responsibilities into these constructive units, Kuba promotes a clear separation of concerns and facilitates a modular and maintainable architecture for web applications.
+This modular approach enables a clear separation of concerns, facilitating maintainable and scalable architectures for your web applications.
 
 ### How It Works
 
-Kuba is a web development tool that provides a set of resources and functionalities to facilitate the application creation process. It offers a simple and efficient architecture, allowing developers to focus on implementing business logic without worrying too much about technical details.
+Kuba provides a comprehensive set of resources and functionalities to simplify the application creation process. Our framework offers a simple and efficient architecture, allowing developers to focus on implementing business logic without getting bogged down by technical details.
 
-### Island Architecture
+### Island Architecture: Unleash JavaScript Control
 
-The Kuba architecture is based on the concept of "Ilha" (Island Architecture), created by Katie Sylor-Miller. This approach allows you to control JavaScript in a web application, even when there are static elements such as navigation links or images with text.
+Kuba's architecture is based on the innovative concept of "Island Architecture" by Katie Sylor-Miller. It empowers you to maintain JavaScript control within your web application, even when faced with static elements such as navigation links or images with text.
 
-The central idea of the island architecture is to render HTML pages on the server and add placeholders in dynamic areas. These placeholders are later filled with independent components on the client, reusing the initial HTML generated by the server.
+The island architecture renders HTML pages on the server while injecting placeholders into dynamic areas. These placeholders are then filled with independent components on the client, reusing the initial HTML generated by the server.
 
-The Kuba architecture simplifies web application development, valuing simplicity and efficiency. It enables rendering static content on the server, while JavaScript is loaded only for components that require interactivity.
+By leveraging the power of island architecture, Kuba simplifies web application development, emphasizing simplicity and efficiency. It enables the server to handle static content, while JavaScript is loaded only for interactive components.
 
-With Kuba, you can achieve better performance as most of the site is transformed into static HTML. Additionally, the island architecture prioritizes important content and makes pages SEO-friendly.
+Experience better performance as the majority of your site transforms into static HTML. Moreover, the island architecture prioritizes important content and ensures your pages are search engine optimized (SEO).
 
-However, this approach may not be suitable for highly interactive applications.
-
-The island architecture is an innovation that brings significant benefits to web application development. With Kuba, you can simplify the development process, maintain clean code, and ensure efficient performance for your project.
-
-### Features
-
-- Lightweight and easy to use
-- Customizable and adaptable for various projects
-- Supports industry-standard technologies
-- Contribution from developers worldwide
-
-### Benefits
-
-Kuba brings several benefits to web application development, including:
-
-- Simple and easy-to-maintain code
-- Scalability and flexibility to accommodate future changes
-- Modularity and code reuse
-- High code quality, following the principles of the Kuba manifesto
-- Ease of testing and debugging
-
-### Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository for this package.
-
-### License
-
-This package is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+Please note that while the island architecture brings significant benefits, it may not be suitable for highly interactive applications.
