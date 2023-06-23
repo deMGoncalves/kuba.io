@@ -98,7 +98,7 @@ yarn deploy
 
 This command will publish your project using Wrangler and make it available in the specified deployment environment.
 
->> Note: Make sure you have configured the deployment settings and environment variables as needed in the Wrangler configuration file.
+> Note: Make sure you have configured the deployment settings and environment variables as needed in the Wrangler configuration file.
 
 Congratulations! You have successfully installed and executed the Kuba project. Now you can develop and deploy web applications with ease using Kuba.
 
