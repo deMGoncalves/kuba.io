@@ -1,5 +1,6 @@
 /**
- * Expressão regular para selecionar classes em um seletor CSS.
+ * Regular expression pattern for matching CSS class selectors.
+ *
  * @type {RegExp}
  */
 const classSelectorRegex = /\.[a-zA-Z0-9_-]+(?![^()]*\))/g
