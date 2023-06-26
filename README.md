@@ -18,15 +18,15 @@ At Kuba, we have a manifesto that guides our development process:
 
 ### Constructive Units for Well-Structured Applications
 
-Kuba's framework comprises several key components that work in harmony to create well-structured web applications:
+The Kuba is composed of several key units that work harmoniously to accomplish a task. This approach is based on Event Storming, a collaborative workshop technique for exploring and designing complex business domains.
 
-- **View**: The View component handles the rendering of HTML, CSS, and JavaScript, ensuring the correct display of the user interface. It empowers you to create stunning and responsive front-end experiences.
-- **Root Aggregate**: The Root Aggregate component models the application's domain, defining its core functionality and data structure. It consists of two vital parts:
-  - **Action**: The Action component manipulates the state of the Root Aggregate. It handles user interactions, triggers events, and performs actions that modify the application's data and behavior.
-  - **State**: The State component represents the current state of the Root Aggregate. It holds the data and information necessary for the application to operate. The State is updated by the Action component and utilized by the View component to render the appropriate user interface.
-- **Advice**: The Advice component plays a crucial role in managing cross-cutting concerns, such as logging, metrics, security, data updates, and formatting. By encapsulating these concerns, the Advice component ensures consistency throughout the application and promotes code reusability.
+- **View (JSX)**: The View component is responsible for rendering the user interface, ensuring the correct display of the state associated with the Root Aggregate. It utilizes the JSX syntax to facilitate the creation of interface elements and components.
+- **Root Aggregate (Entity)**: The Root Aggregate class models the application's domain, defining its core functionality and data structure. It can be composed of other entities and is responsible for coordinating the interaction between them. The Root Aggregate encapsulates the business logic and provides methods and properties to manipulate and retrieve domain information. It consists of two vital parts:
+  - **Action (Method)**: The methods of the Root Aggregate class, known as Actions, handle interactions from external agents, trigger events, and perform actions that modify the state of the Root Aggregate. They represent the available operations in the domain and allow external agents to interact with the application.
+  - **State (Getters)**: The getters of the Root Aggregate class, known as State, represent the current state of the Root Aggregate. They provide access to the data and information necessary for the application's functioning. Getters enable other components, such as the View, to retrieve the necessary data for rendering the user interface.
+- **Advice (Police)**: Decorators, also known as Advice, play an important role in managing cross-cutting concerns in the application. They handle tasks such as logging, metrics, security, data updates, and formatting. By adding decorators to the methods of the Root Aggregate, it is possible to apply additional behaviors to these methods, promoting code reuse and an aspect-oriented approach in programming.
 
-This modular approach enables a clear separation of concerns, facilitating maintainable and scalable architectures for your web applications.
+By dividing responsibilities into these constructive units, Kuba promotes a clear separation of concerns, facilitating the development of sustainable and scalable architectures for your web applications. Feel free to explore each component in more detail and leverage Kuba's modular structure to create well-organized and easily maintainable web applications.
 
 ### How It Works
 
