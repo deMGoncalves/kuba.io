@@ -1,9 +1,9 @@
 import { paint } from '@kuba/jsx'
-import component from './component'
 import result from '@kuba/result'
 import storage from './storage'
+import view from './view'
 
-@paint(component)
+@paint(view)
 @storage
 class Address {
   #data

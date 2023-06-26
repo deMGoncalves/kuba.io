@@ -203,6 +203,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kuba/css@workspace:standard/css":
+  version: 0.0.0-use.local
+  resolution: "@kuba/css@workspace:standard/css"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/http@workspace:standard/http":
   version: 0.0.0-use.local
   resolution: "@kuba/http@workspace:standard/http"
@@ -212,6 +218,12 @@ __metadata:
 "@kuba/jsx@workspace:standard/jsx":
   version: 0.0.0-use.local
   resolution: "@kuba/jsx@workspace:standard/jsx"
+  languageName: unknown
+  linkType: soft
+
+"@kuba/magic@workspace:standard/magic":
+  version: 0.0.0-use.local
+  resolution: "@kuba/magic@workspace:standard/magic"
   languageName: unknown
   linkType: soft
 
