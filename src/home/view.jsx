@@ -1,18 +1,13 @@
-import jsx, { Fragment } from '@kuba/jsx'
+import jsx from '@kuba/jsx'
+import Master from '@kuba/master'
 
 function component (address) {
   return (
-    <>
-      <head>
-        <meta charset='utf-8' />
-        <title>Kuba</title>
-      </head>
-      <body>
-        <address>
-          <p>{address.value}</p>
-        </address>
-      </body>
-    </>
+    <Master>
+      <address>
+        <p>{address.value}</p>
+      </address>
+    </Master>
   )
 }
 
