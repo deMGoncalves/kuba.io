@@ -10,6 +10,7 @@ The Standard Workspace includes the following packages:
 - **http**: The http package is a lightweight utility for making HTTP requests in JavaScript.
 - **jsx**: The JSX package provides a lightweight and efficient JSX rendering library for use in your projects.
 - **magic**: The magic module provides a way to simulate Python's magic methods in JavaScript.
+- **master**: The Master Template is a reusable component that serves as the base template for the Kuba website.
 - **middleware**: The middleware function is a utility that allows you to apply middleware to a class constructor.
 - **result**: The Result package provides an enum-like object for representing result values in JavaScript.
 - **router**: The router package is a JavaScript library that allows you to create and manage routes in an application.
