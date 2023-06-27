@@ -1,5 +1,11 @@
 import css from '@kuba/css'
 
+/**
+ * The reset CSS styles.
+ *
+ * The styles include resetting the box-sizing to border-box, setting margins and paddings to 0 for all elements,
+ * and setting cursor to pointer and user-select to none for anchor links and buttons.
+ */
 const style = css`
   *,
   *::after,
