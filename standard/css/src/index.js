@@ -1,2 +1,2 @@
 export { default } from './css'
-export { Style } from './style'
+export { default as Style } from './style'
