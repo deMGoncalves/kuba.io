@@ -1,3 +1,4 @@
+import '@kuba/reset'
 import './home'
 import router from '@kuba/router'
 
