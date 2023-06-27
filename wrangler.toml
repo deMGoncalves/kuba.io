@@ -3,12 +3,12 @@ main = "dist/index.js"
 name = "kuba-io"
 send_metrics = false
 
+[site]
+bucket = "public"
+
 [build]
 command = "yarn run tsc"
 watch_dir = "src"
-
-[site]
-bucket = "public"
 
 [dev]
 ip = "localhost"
