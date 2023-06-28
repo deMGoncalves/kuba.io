@@ -257,6 +257,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@kuba/title@workspace:standard/title":
+  version: 0.0.0-use.local
+  resolution: "@kuba/title@workspace:standard/title"
+  languageName: unknown
+  linkType: soft
+
 "@kuba/tokens@workspace:pixel/tokens":
   version: 0.0.0-use.local
   resolution: "@kuba/tokens@workspace:pixel/tokens"
