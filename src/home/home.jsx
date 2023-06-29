@@ -5,7 +5,7 @@ import view from './view'
 
 @paint(view)
 @storage
-class Address {
+class Home {
   #data
 
   get value () {
@@ -18,4 +18,4 @@ class Address {
   }
 }
 
-export default Address
+export default Home
