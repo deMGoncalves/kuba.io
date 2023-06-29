@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "baseUrl": ".",
     "checkJs": false,
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -9,20 +8,10 @@
     "jsxFactory": "jsx",
     "jsxFragmentFactory": "Fragment",
     "moduleResolution": "node",
-    "module": "commonjs",
-    "outDir": "dist",
-    "paths": {
-      "@kuba/*": [
-        "pixel/*",
-        "standard/*"
-      ]
-    },
+    "module": "esnext",
     "resolveJsonModule": true,
     "sourceMap": false,
     "strict": true,
     "target": "esnext"
-  },
-  "include": [
-    "src"
-  ]
+  }
 }
