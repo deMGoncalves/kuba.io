@@ -30,7 +30,7 @@ When creating a new page, follow a consistent page structure to ensure clarity a
 ```js
 src/
 |-- pages/
-|   |-- PageName/
+|   |-- home/
 |   |   |-- components/
 |   |   |-- home.js
 |   |   |-- home.test.js
