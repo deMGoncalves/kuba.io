@@ -1,6 +1,6 @@
-import http from '@kuba/http'
-import middleware from '@kuba/middleware'
-import result from '@kuba/result'
+import http from '@standard/http'
+import middleware from '@standard/middleware'
+import result from '@standard/result'
 
 async function storage (address, next) {
   const url = 'https://viacep.com.br/ws/07135313/json'

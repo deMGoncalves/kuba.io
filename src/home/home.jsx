@@ -1,5 +1,5 @@
-import { paint } from '@kuba/jsx'
-import result from '@kuba/result'
+import { paint } from '@standard/jsx'
+import result from '@standard/result'
 import storage from './storage'
 import view from './view'
 

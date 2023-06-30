@@ -1,5 +1,5 @@
 import Home from './home'
-import router from '@kuba/router'
+import router from '@standard/router'
 
 router.get('/', async function home () {
   const body = await Home()

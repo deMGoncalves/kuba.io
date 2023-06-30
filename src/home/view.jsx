@@ -1,5 +1,5 @@
-import jsx from '@kuba/jsx'
-import Master from '@kuba/master'
+import jsx from '@standard/jsx'
+import Master from '@standard/master'
 
 function component (address) {
   return (
