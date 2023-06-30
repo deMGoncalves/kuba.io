@@ -1,0 +1,21 @@
+{
+  "jsc": {
+    "baseUrl": "src",
+    "parser": {
+      "decorators": true,
+      "syntax": "typescript",
+      "tsx": true,
+    },
+    "paths": {
+      "@pixel/*": ["pixel/*"],
+      "@standard/*": ["standard/*"]
+    },
+    "target": "es2022",
+    "transform": {
+      "react": {
+        "pragma": "jsx",
+        "pragmaFrag": "Fragment",
+      }
+    }
+  }
+}
