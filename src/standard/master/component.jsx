@@ -1,4 +1,5 @@
 import { Style } from '@standard/css'
+import Desciption from '@standard/description'
 import jsx from '@standard/jsx'
 import Title from '@standard/title'
 
@@ -14,8 +15,7 @@ function component (_props, children) {
     <html lang='en-US'>
       <head>
         <Title />
-        <meta name='description' content='Join the Kuba revolution and experience the next generation of web development. Unlock the full potential of speed, reliability, and simplicity, and let your creativity soar.' />
-        <meta charset='UTF-8' />
+        <Desciption />
         <Style />
       </head>
       <body>
