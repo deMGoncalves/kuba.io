@@ -1,6 +1,6 @@
 import { Style } from '@standard/css'
 import Desciption from '@standard/description'
-import jsx from '@standard/jsx'
+import h from '@standard/h'
 import Title from '@standard/title'
 
 /**

@@ -1,4 +1,4 @@
-import jsx from '@standard/jsx'
+import h from '@standard/h'
 
 function view (description) {
   return (

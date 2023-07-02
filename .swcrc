@@ -14,7 +14,7 @@
     "target": "es2022",
     "transform": {
       "react": {
-        "pragma": "jsx",
+        "pragma": "h",
         "pragmaFrag": "Fragment",
       }
     }

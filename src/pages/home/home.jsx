@@ -1,4 +1,4 @@
-import { paint } from '@standard/jsx'
+import { paint } from '@standard/h'
 import result from '@standard/result'
 import storage from './storage'
 import view from './view'

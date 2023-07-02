@@ -1,4 +1,4 @@
-import jsx from '@standard/jsx'
+import h from '@standard/h'
 import Master from '@standard/master'
 
 function component (address) {

@@ -1,4 +1,4 @@
-import { paint } from '@standard/jsx'
+import { paint } from '@standard/h'
 import magic from '@standard/magic'
 import view from './view'
 

@@ -1,4 +1,4 @@
-import jsx from '@standard/jsx'
+import h from '@standard/h'
 import textContent from './textContent'
 
 /**
