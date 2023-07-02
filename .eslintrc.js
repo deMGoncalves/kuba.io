@@ -24,6 +24,8 @@ module.exports = {
         varsIgnorePattern: '^(h|Fragment)$',
         argsIgnorePattern: '^_'
       }
-    ]
+    ],
+    'no-async-promise-executor': 'off',
+    'no-sequences': 'off'
   }
 }

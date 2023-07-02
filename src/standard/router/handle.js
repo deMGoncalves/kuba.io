@@ -13,7 +13,7 @@ import findMatchingRoute from './findMatchingRoute'
  * @param {any} ctx - The context object.
  * @returns {Promise<Response|undefined>} The response object or undefined if no matching route is found.
  */
-function handle(request, env, ctx) {
+function handle (request, env, ctx) {
   const { page, path } = findMatchingRoute(request)
 
   extractArgs(request)

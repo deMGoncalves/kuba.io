@@ -11,7 +11,7 @@ class Children {
    * @param {Array} children - The JSX children to be mapped and filtered.
    * @returns {Array} The mapped and filtered JSX children.
    */
-  static async mapper(children) {
+  static async mapper (children) {
     children = await Promise.all(children)
     children = children.flat(Infinity)
     children = children.filter(Boolean)
@@ -26,7 +26,7 @@ class Children {
    * @param {Array} children - The JSX children to be converted into a string.
    * @returns {string} The string representation of the JSX children.
    */
-  static stringify(children) {
+  static stringify (children) {
     return children.join('')
   }
 }

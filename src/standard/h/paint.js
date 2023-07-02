@@ -4,7 +4,7 @@
  * @param {Function} component - The rendering function that transforms the component instance.
  * @returns {Function} The decorator function.
  */
-function paint(component) {
+function paint (component) {
   /**
    * Decorator function that wraps the provided component class with rendering functionality.
    *

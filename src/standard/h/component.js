@@ -11,7 +11,7 @@ class Componet {
    * @param {Array} children - The children to be passed to the component.
    * @returns {*} The result of executing the component.
    */
-  static execute(component, attrs, children) {
+  static execute (component, attrs, children) {
     return component(attrs, children)
   }
 
@@ -22,7 +22,7 @@ class Componet {
    * @param {*} component - The value to be checked.
    * @returns {boolean} True if the value is a component, false otherwise.
    */
-  static is(component) {
+  static is (component) {
     return typeof component === 'function'
   }
 }

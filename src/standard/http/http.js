@@ -5,7 +5,7 @@ import outlet from './outlet'
  * @type {Object}
  */
 export default new Proxy({}, {
-   /**
+  /**
    * Proxy handler for intercepting property access.
    * @param {Object} _ - The target object.
    * @param {string} method - The method name being accessed.

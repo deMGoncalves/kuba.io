@@ -9,7 +9,7 @@ class Tag {
    * @param {Array} children - The children of the tag.
    * @returns {boolean} True if the tag is self-closing, false otherwise.
    */
-  static isSelfClose(children) {
+  static isSelfClose (children) {
     return (children?.length === 0)
   }
 }

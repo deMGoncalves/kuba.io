@@ -8,7 +8,7 @@ import listeners from './listeners'
  * @param {Request} request - The incoming HTTP request object.
  * @returns {Route|undefined} The matching route object or undefined if no match is found.
  */
-function findMatchingRoute(request) {
+function findMatchingRoute (request) {
   const url = new URL(request.url)
   const path = url.pathname.replace(/:\w+/g, '([a-z0-9-_]+)')
   const pattern = new RegExp(`^${path}$`, 'i')

@@ -10,7 +10,7 @@ import Element from './element'
  * @param {Array<string | Function>} children - Children of the h element or component. Can contain strings or h elements.
  * @returns {string} The rendered h element as a string.
  */
-async function h(elementOrComponent, attrs, ...children) {
+async function h (elementOrComponent, attrs, ...children) {
   attrs = { ...attrs }
   children = await Children.mapper(children)
 

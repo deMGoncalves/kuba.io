@@ -7,7 +7,7 @@ import Children from './children'
  * @param {Array} children - The children of the Fragment.
  * @returns {string} The concatenated string representation of the children.
  */
-function Fragment(_attrs, children) {
+function Fragment (_attrs, children) {
   return Children.stringify(children)
 }
 

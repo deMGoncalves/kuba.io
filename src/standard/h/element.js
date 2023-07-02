@@ -15,7 +15,7 @@ class Element {
    * @param {Array} children - The children of the element.
    * @returns {string} The HTML string representation of the JSX element.
    */
-  static create(element, attrs, children) {
+  static create (element, attrs, children) {
     const selfClose = Tag.isSelfClose(children)
     const props = Props.stringify(attrs)
     const textContent = Children.stringify(children)

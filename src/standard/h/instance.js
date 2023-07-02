@@ -11,7 +11,7 @@ class Instance {
    * @param {Array} children - The array of child instances to be mapped.
    * @returns {Array} The mapped child instances.
    */
-  static mapper(children) {
+  static mapper (children) {
     return children.map((child) => (child[paint.textContent]?.() ?? child))
   }
 }

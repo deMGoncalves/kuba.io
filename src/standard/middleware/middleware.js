@@ -4,7 +4,7 @@
  * @param {Function} functionRef - The middleware function to be executed.
  * @returns {Function} The wrapped class constructor.
  */
-function middleware(functionRef) {
+function middleware (functionRef) {
   return function (ClassRef) {
     return new Proxy(
       /**

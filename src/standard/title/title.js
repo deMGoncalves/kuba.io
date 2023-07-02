@@ -4,7 +4,7 @@ import view from './view'
 
 @paint(view)
 class Title {
-  #content = 'kuba';
+  #content = 'kuba'
 
   get content () {
     return Title[magic.content] ?? 'Kuba'
