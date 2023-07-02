@@ -45,8 +45,8 @@ const style = css`
     --color-menu-dark: #21252d;
     --color-menu: #2b303b;
     --color-menu-light: #929aac;
-    --color-pure-white: #ffffff;
-    --color-pure-black: #000000;
+    --color-pure-white: #fff;
+    --color-pure-black: #000;
   }
 `
 
