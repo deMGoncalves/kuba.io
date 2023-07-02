@@ -7,7 +7,7 @@ The Standard Workspace is a collection of packages that form the foundation of t
 The Standard Workspace includes the following packages:
 
 - **css**: The css package is a lightweight utility that simplifies working with CSS code in JavaScript projects.
-- **description**:
+- **description**: The Description package is responsible for managing the description of the web page.
 - **http**: The http package is a lightweight utility for making HTTP requests in JavaScript.
 - **jsx**: The JSX package provides a lightweight and efficient JSX rendering library for use in your projects.
 - **magic**: The magic module provides a way to simulate Python's magic methods in JavaScript.
