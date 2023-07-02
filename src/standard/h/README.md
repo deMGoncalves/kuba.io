@@ -9,7 +9,7 @@ To use the h package in your project, follow these steps:
 1. Import the necessary dependencies:
 
 ```js
-import { paint } from '@kuba/jsx'
+import { paint } from '@kuba/h'
 import component from './component'
 ```
 
@@ -27,7 +27,7 @@ The `@paint` decorator wraps your class with the specified component, enabling r
 3. Define your component using h:
 
 ```js
-import jsx, { Fragment } from '@kuba/jsx'
+import h, { Fragment } from '@kuba/h'
 
 function component() {
   return (
@@ -39,11 +39,11 @@ export default component
 
 ```
 
-In this example, we define a `component` function that returns a h element `<div />`. The jsx function is imported from the `@kuba/jsx` package.
+In this example, we define a `component` function that returns a h element `<div />`. The h function is imported from the `@kuba/h` package.
 
 ### h Rendering and Decoration
 
-The `jsx` function provided by the h package allows you to render h elements without the need for a specific rendering library. It simplifies the process of creating and rendering h elements.
+The `h` function provided by the h package allows you to render h elements without the need for a specific rendering library. It simplifies the process of creating and rendering h elements.
 
 The `@paint` decorator wraps your class with the specified component, enabling rendering using h. This allows you to utilize the functionality provided by the component when rendering your class.
 
