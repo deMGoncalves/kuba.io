@@ -1,6 +1,6 @@
 # Title
 
-The Title package is responsible for managing the title of the web page. It provides a convenient way to set and update the title dynamically, allowing developers to control what appears in the browser's title bar.
+The `Title` package is responsible for managing the title of the web page. It provides a convenient way to set and update the title dynamically, allowing developers to control what appears in the browser's title bar.
 
 ### Usage
 
