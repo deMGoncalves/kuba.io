@@ -15,7 +15,7 @@
     "transform": {
       "react": {
         "pragma": "h",
-        "pragmaFrag": "Fragment",
+        "pragmaFrag": "Fragment"
       }
     }
   }
