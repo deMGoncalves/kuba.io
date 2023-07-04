@@ -2,6 +2,29 @@ import __ from './__'
 import oneParameter from './oneParameter'
 import twoParameters from './twoParameters'
 
+/**
+ * Creates an evaluation function that accepts three parameters for the given function reference.
+ *
+ * @param {Function} functionRef - The function reference to be evaluated.
+ * @returns {Function} An evaluation function that accepts three parameters and returns either a new evaluation function or the result of the original function.
+ * @throws {TypeError} If 'functionRef' is not a function.
+ *
+ * @example
+ * function addThreeNumbers(a, b, c) {
+ *   return a + b + c;
+ * }
+ *
+ * const evaluatedAdd = threeParameters(addThreeNumbers);
+ * console.log(evaluatedAdd(2, 3, 4)); // Output: 9
+ *
+ * const chainedEvaluatedAdd = evaluatedAdd(2); // Returns a new evaluation function with two remaining parameters.
+ * console.log(chainedEvaluatedAdd(3, 4)); // Output: 9
+ * console.log(chainedEvaluatedAdd(3)); // Output: [Function: evaluate]
+ *
+ * @see __
+ * @see oneParameter
+ * @see twoParameters
+ */
 function threeParameters (functionRef) {
   return function evaluate (a, b, c) {
     switch (arguments.length) {
@@ -39,6 +62,20 @@ function threeParameters (functionRef) {
   }
 }
 
+/**
+ * Checks if the provided function reference has an arity of three (accepts three parameters).
+ *
+ * @param {Function} functionRef - The function reference to be checked.
+ * @returns {boolean} True if the function has an arity of three, otherwise false.
+ *
+ * @example
+ * function multiplyThreeNumbers(a, b, c) {
+ *   return a * b * c;
+ * }
+ *
+ * const hasThreeParameters = threeParameters.is(multiplyThreeNumbers); // Returns true
+ * const hasTwoParameters = threeParameters.is(function(a, b) { return a + b; }); // Returns false
+ */
 Object.assign(threeParameters, {
   is: (functionRef) => functionRef.length === 3
 })
