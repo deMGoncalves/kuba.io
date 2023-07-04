@@ -8,13 +8,16 @@ The Standard Workspace includes the following packages:
 
 - **css**: The css package is a lightweight utility that simplifies working with CSS code in JavaScript projects.
 - **description**: The Description package is responsible for managing the description of the web page.
+- **f**: Is a functional programming utility package that provides a set of utility functions for working with JavaScript functions and function arguments.
 - **h**: The h package provides a lightweight and efficient h rendering library for use in your projects.
 - **http**: The http package is a lightweight utility for making HTTP requests in JavaScript.
 - **magic**: The magic module provides a way to simulate Python's magic methods in JavaScript.
 - **master**: The Master Template is a reusable component that serves as the base template for the Kuba website.
 - **middleware**: The middleware function is a utility that allows you to apply middleware to a class constructor.
+- **polished**: Polished is a JavaScript utility library that complements styled-components, a popular CSS-in-JS library, by providing a set of functions to work with colors, typography, and other styling operations.
 - **result**: The Result package provides an enum-like object for representing result values in JavaScript.
 - **router**: The router package is a JavaScript library that allows you to create and manage routes in an application.
+- **styled**: The styled package is a CSS-in-JS library that allows you to create and apply custom styles to JSX elements in a simple and dynamic way.
 - **title**: The Title package is responsible for managing the title of the web page.
 
 ### Contributing
