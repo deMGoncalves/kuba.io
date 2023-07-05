@@ -20,6 +20,7 @@ const text = new Proxy({}, {
       font-family: ${p.family};
       font-size: ${p.size};
       font-weight: ${p.weight};
+      letter-spacing: .618px;
       line-height: var(--line-height-md);
       text-align: ${p.align};
     `
