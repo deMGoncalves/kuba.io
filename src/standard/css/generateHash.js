@@ -4,7 +4,7 @@
  * @returns {string} The generated hash string.
  */
 function generateHash () {
-  return Math.random().toString(36)
+  return `_${Math.random().toString(36).slice(2)}`
 }
 
 export default generateHash
