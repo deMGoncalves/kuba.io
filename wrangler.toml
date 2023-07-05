@@ -8,6 +8,7 @@ bucket = "public"
 
 [build]
 command = "yarn run swc src -d dist"
+watch_dir = "src"
 
 [dev]
 ip = "localhost"
