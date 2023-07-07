@@ -23,6 +23,10 @@ const button = css`
     border-radius: var(--border-radius-pill);
   }
 
+  .button[elevated] {
+    box-shadow: var(--shadow-level-1);
+  }
+
   ${
     colors
       .map((color) => (`
