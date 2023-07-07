@@ -19,12 +19,38 @@ const button = css`
     padding: 0 var(--spacing_inset-sm);
   }
 
-  .button[pill] {
-    border-radius: var(--border-radius-pill);
+  .button:hover {
+    background-color: var(--color-master-lightest);
   }
+
+  .button:active,
+  .button:focus {
+    background-color: var(--color-master-lighter);
+  }
+
 
   .button[elevated] {
     box-shadow: var(--shadow-level-1);
+  }
+
+  .button[filled] {
+    border-color: var(--color-pure-white);
+    color: var(--color-master-darker);
+  }
+
+  .button[filled]:hover {
+    background-color: var(--color-master-lightest);
+    border-color: var(--color-master-lightest);
+  }
+
+  .button[filled]:active,
+  .button[filled]:focus {
+    background-color: var(--color-master-lighter);
+    border-color: var(--color-master-lighter);
+  }
+
+  .button[pill] {
+    border-radius: var(--border-radius-pill);
   }
 
   ${
@@ -36,13 +62,13 @@ const button = css`
       `))
   }
 
-  .button:hover {
-    background-color: var(--color-master-lightest);
-  }
-
-  .button:active,
-  .button:focus {
-    background-color: var(--color-master-lighter);
+  ${
+    colors
+      .map((color) => (`
+        .button[${color}][filled] {
+          color: var(--color-${color}-darker);
+        }
+      `))
   }
 
   ${
@@ -62,6 +88,27 @@ const button = css`
         .button[${color}]:focus {
           background-color: var(--color-${color}-dark);
           border-color: var(--color-${color}-dark);
+        }
+      `))
+  }
+
+  ${
+    colors
+      .map((color) => (`
+        .button[${color}][filled] {
+          background-color: var(--color-${color}-lighter);
+          border-color: var(--color-${color}-lighter);
+        }
+
+        .button[${color}][filled]:hover {
+          background-color: var(--color-${color}-light);
+          border-color: var(--color-${color}-light);
+        }
+
+        .button[${color}][filled]:active,
+        .button[${color}][filled]:focus {
+          background-color: var(--color-${color});
+          border-color: var(--color-${color});
         }
       `))
   }
