@@ -1,13 +1,5 @@
+import colors from './colors'
 import css from '@standard/css'
-
-const colors = [
-  'complete',
-  'danger',
-  'info',
-  'primary',
-  'success',
-  'warning'
-]
 
 const button = css`
   .button {
@@ -25,6 +17,10 @@ const button = css`
     justify-content: center;
     letter-spacing: .618px;
     padding: 0 var(--spacing_inset-sm);
+  }
+
+  .button[pill] {
+    border-radius: var(--border-radius-pill);
   }
 
   ${
