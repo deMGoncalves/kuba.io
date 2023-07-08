@@ -1,6 +1,8 @@
 import '@pixel/reset'
 import '@pixel/tokens'
 import '@pages/home'
+
+import asset from '@standard/asset'
 import router from '@standard/router'
 
 /**
@@ -10,5 +12,9 @@ import router from '@standard/router'
  * @default router.handle
  */
 export default {
-  fetch: router.handle
+  async fetch (request, env, ctx) {
+    return asset.is(request)
+      ? await asset.handle(request, env, ctx)
+      : await router.handle(request, env, ctx)
+  }
 }
