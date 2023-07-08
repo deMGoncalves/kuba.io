@@ -32,5 +32,8 @@
     "postinstall": "husky install",
     "start": "wrangler dev"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.3.0"
+  }
 }
