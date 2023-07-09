@@ -12,7 +12,7 @@ ip = "localhost"
 port = 5000
 
 [site]
-bucket = "asset"
+bucket = "assets"
 include = [
   "prelude"
 ]
