@@ -6,6 +6,7 @@ The Standard Workspace is a collection of packages that form the foundation of t
 
 The Standard Workspace includes the following packages:
 
+- **asset**: The Asset module provides functionality for handling static assets in your application.
 - **css**: The css package is a lightweight utility that simplifies working with CSS code in JavaScript projects.
 - **description**: The Description package is responsible for managing the description of the web page.
 - **f**: Is a functional programming utility package that provides a set of utility functions for working with JavaScript functions and function arguments.
