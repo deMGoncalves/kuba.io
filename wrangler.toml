@@ -4,7 +4,7 @@ name = "kuba-io"
 send_metrics = false
 
 [build]
-command = "yarn run swc src -d release"
+command = "yarn build"
 watch_dir = "src"
 
 [dev]

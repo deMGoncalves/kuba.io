@@ -28,6 +28,7 @@
   "packageManager": "yarn@3.6.0",
   "private": true,
   "scripts": {
+    "build": "swc src -d release",
     "deploy": "wrangler publish",
     "postinstall": "husky install",
     "start": "wrangler dev"
