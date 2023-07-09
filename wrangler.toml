@@ -13,6 +13,3 @@ port = 5000
 
 [site]
 bucket = "assets"
-include = [
-  "prelude"
-]

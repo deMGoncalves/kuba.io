@@ -260,4 +260,5 @@ dist
 .pnp.*
 
 # Kuba.io build / generate output
+assets/prelude
 release
