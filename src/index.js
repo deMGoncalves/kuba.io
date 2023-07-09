@@ -12,9 +12,9 @@ import router from '@standard/router'
  * @default router.handle
  */
 export default {
-  async fetch (request, env, ctx) {
+  async fetch (request, ...args) {
     return asset.is(request)
-      ? await asset.handle(request, env, ctx)
-      : await router.handle(request, env, ctx)
+      ? await asset.handle(request, ...args)
+      : await router.handle(request, ...args)
   }
 }
