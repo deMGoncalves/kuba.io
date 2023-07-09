@@ -1,15 +1,18 @@
 compatibility_date = "2023-05-27"
-main = "dist/index.js"
+main = "release/index.js"
 name = "kuba-io"
 send_metrics = false
 
-[site]
-bucket = "public"
-
 [build]
-command = "yarn run swc src -d dist"
+command = "yarn run swc src -d release"
 watch_dir = "src"
 
 [dev]
 ip = "localhost"
 port = 5000
+
+[site]
+bucket = "asset"
+include = [
+  "prelude"
+]
