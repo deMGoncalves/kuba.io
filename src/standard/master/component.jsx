@@ -1,6 +1,7 @@
 import { Style } from '@standard/css'
 import Desciption from '@standard/description'
 import h from '@standard/h'
+import Scripts from '@standard/scripts'
 import Title from '@standard/title'
 
 /**
@@ -20,7 +21,7 @@ function component (_props, children) {
       </head>
       <body>
         {children}
-        <script src='prelude/htmx.js' async />
+        <Scripts />
       </body>
     </html>
   )
