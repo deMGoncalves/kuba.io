@@ -1,5 +1,6 @@
 import '@pixel/reset'
 import '@pixel/tokens'
+import '@api/clickMe'
 import '@pages/home'
 
 import asset from '@standard/asset'
