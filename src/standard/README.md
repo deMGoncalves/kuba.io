@@ -18,6 +18,7 @@ The Standard Workspace includes the following packages:
 - **polished**: Polished is a JavaScript utility library that complements styled-components, a popular CSS-in-JS library, by providing a set of functions to work with colors, typography, and other styling operations.
 - **result**: The Result package provides an enum-like object for representing result values in JavaScript.
 - **router**: The router package is a JavaScript library that allows you to create and manage routes in an application.
+- **scripts**: The Scripts package provides a set of scripts to be imported on your web page.
 - **styled**: The styled package is a CSS-in-JS library that allows you to create and apply custom styles to JSX elements in a simple and dynamic way.
 - **title**: The Title package is responsible for managing the title of the web page.
 
