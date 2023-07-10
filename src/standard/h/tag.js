@@ -3,14 +3,14 @@
  */
 class Tag {
   /**
-   * Checks if a tag is a self-closing tag based on the presence of children.
+   * Checks if a tag is a self-closing tag based on the element name.
    *
    * @static
-   * @param {Array} children - The children of the tag.
+   * @param {string} element - The element tag naame.
    * @returns {boolean} True if the tag is self-closing, false otherwise.
    */
-  static isSelfClose (children) {
-    return (children?.length === 0)
+  static isSelfClose (element) {
+    return /^(area|base|br|col|embed|hr|img|input|link|meta|param|source|track|wbr)$/i.test(element)
   }
 }
 
