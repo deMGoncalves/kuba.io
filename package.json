@@ -32,9 +32,9 @@
   "packageManager": "yarn@3.6.0",
   "private": true,
   "scripts": {
-    "build": "concurrently -k \"yarn build:prelude\" \"yarn build:release\"",
-    "build:prelude": "swc src/prelude/htmx/index.js -o assets/prelude/htmx.js",
-    "build:release": "swc src/index.js -d release",
+    "build": "concurrently -K \"yarn build:prelude\" \"yarn build:release\"",
+    "build:prelude": "swc src/prelude/htmx -o assets/prelude/htmx.js -C module.type=umd",
+    "build:release": "swc src -d release",
     "deploy": "wrangler publish",
     "postinstall": "husky install",
     "start": "wrangler dev"
