@@ -20,6 +20,7 @@ function component (_props, children) {
       </head>
       <body>
         {children}
+        <script src='prelude/htmx.js' async />
       </body>
     </html>
   )
