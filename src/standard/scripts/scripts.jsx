@@ -4,7 +4,7 @@ import h, { Fragment } from '@standard/h'
  * Renders the scripts to be imported on the page.
  *
  * @function component
- * @returns {string} The rendered <script> elements as a string.
+ * @returns {JSX.Element} The rendered <script> elements.
  */
 function component () {
   return (
