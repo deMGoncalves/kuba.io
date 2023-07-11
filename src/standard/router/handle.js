@@ -1,4 +1,5 @@
 import extractArgs from './extractArgs'
+import extractBody from './extractBody'
 import extractParams from './extractParams'
 import findMatchingRoute from './findMatchingRoute'
 
@@ -13,9 +14,10 @@ import findMatchingRoute from './findMatchingRoute'
  * @param {any} ctx - The context object.
  * @returns {Promise<Response|undefined>} The response object or undefined if no matching route is found.
  */
-function handle (request, env, ctx) {
+async function handle (request, env, ctx) {
   const { page, path } = findMatchingRoute(request)
 
+  await extractBody(request)
   extractArgs(request)
   extractParams(request, path)
 
