@@ -1,9 +1,3 @@
-function htmx (e) {
-  e.target.matches('[action]') && (
-    fetch(e.target.getAttribute('action'))
-      .then(response => response.text())
-      .then(text => (e.target.innerHTML = text))
-  )
-}
+import HTMx from './htmx'
 
-window.addEventListener('click', htmx)
+window.addEventListener('click', HTMx.handle)
