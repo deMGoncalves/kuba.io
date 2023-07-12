@@ -13,7 +13,7 @@ const DOM = new Proxy(
      * @param {Element} target - The target element.
      */
     innerHTML (textContent, target) {
-      target.innerHTML = textContent
+      requestAnimationFrame(() => (target.innerHTML = textContent))
     },
 
     /**
@@ -35,7 +35,7 @@ const DOM = new Proxy(
      * @returns {function} A function that performs DOM manipulation.
      */
     get (target, where) {
-      return target[where] ?? ((textContent, node) => node.insertAdjacentHTML(where, textContent))
+      return target[where] ?? ((textContent, node) => requestAnimationFrame(() => node.insertAdjacentHTML(where, textContent)))
     }
   }
 )
