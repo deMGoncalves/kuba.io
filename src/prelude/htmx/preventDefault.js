@@ -16,7 +16,7 @@ function preventDefault (_target, _prop, descriptor) {
      */
     value (event) {
       event.preventDefault()
-      method(event)
+      method.call(this, event)
     }
   })
 }

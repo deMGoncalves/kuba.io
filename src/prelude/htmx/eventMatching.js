@@ -14,7 +14,11 @@ function eventMatching (_target, _prop, descriptor) {
      * @param {Event} event - The event object.
      */
     value (event) {
-      event.target.matches('[data-action]') && method(event)
+      if (!event.target.matches('[data-action]')) return
+      if (/click/i.test(event.type) && /input|form|select|textarea/i.test(event.target.tagName)) return
+      if (/change/i.test(event.type) && !/input|select|textarea/i.test(event.target.tagName)) return
+      if (/submit/i.test(event.type) && !/form/i.test(event.target.tagName)) return
+      return method.call(this, event)
     }
   })
 }

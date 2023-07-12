@@ -7,6 +7,8 @@ import preventDefault from './preventDefault'
  * HTMx class for handling HTMx events.
  */
 class HTMx {
+  #target
+
   /**
    * Gets the request body as JSON string.
    *
@@ -25,7 +27,7 @@ class HTMx {
    * @returns {Element} The target context element.
    */
   get context () {
-    return (document.querySelector(this.#target.dataset.target) ?? this.#target)
+    return (document.querySelector(this.#target.dataset.for) ?? this.#target)
   }
 
   /**
@@ -54,7 +56,7 @@ class HTMx {
    * @returns {string} The HTMx operation.
    */
   get operation () {
-    return (this.#target.dataset.operation ?? 'stub')
+    return (this.#target.dataset.morph ?? 'stub')
   }
 
   /**
