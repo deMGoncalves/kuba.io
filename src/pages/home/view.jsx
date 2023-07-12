@@ -9,7 +9,7 @@ function component (address) {
       <address>
         <text.P>{address.value}</text.P>
       </address>
-      <Button data-action='/api/click-me' data-target='#shelf' data-operation='afterbegin'>Click Me</Button>
+      <Button data-action='/api/click-me' data-for='#shelf' data-morph='afterbegin'>Click Me</Button>
       <div id='shelf' />
     </Master>
   )
