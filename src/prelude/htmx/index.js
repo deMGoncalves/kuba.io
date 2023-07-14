@@ -1,3 +1,4 @@
+import events from './events'
 import HTMx from './htmx'
 
-['click', 'change', 'submit'].forEach(event => window.addEventListener(event, HTMx.handle))
+events.forEach(event => window.addEventListener(event, HTMx.handle))
